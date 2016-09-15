@@ -87,6 +87,7 @@ a {
 	-ms-transition: background-color .4s linear, color .4s linear;
 	transition: background-color .4s linear, color .4s linear;
 }
+
 a:hover,
 a:focus {
   text-decoration: none;
@@ -106,6 +107,35 @@ a:focus {
 
 .centered {
 	text-align: center
+}
+
+/*	################################################################
+	SECTIONS
+################################################################# */
+
+/* Footer */
+footer {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: $secondary;
+
+	p {
+		color: $footer_content;
+	}
+
+	h4 {
+		color: $footer_heading;
+	}
+
+	i {
+		font-size: 30px;
+		color: $footer_content;
+		padding-right: 25px;
+	}
+
+	i:hover {
+		color: $primary;
+	}
 }
 
 /*	################################################################
