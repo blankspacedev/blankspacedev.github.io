@@ -21,7 +21,15 @@
 
       <div class="navbar-collapse collapse navbar-right">
         <ul class="nav navbar-nav">
-          <li {% if page.title == "Home" %}class="active"{% endif %}><a href="{{"/" | prepend: site.baseurl }}">HOME</a></li>
+          {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+              {% for p in navigation_pages %}
+                {% if p.navigation_weight %}
+                  <li {% if p.url == page.url | prepend: site.github.url %} class="active"{% endif %} role="presentation">
+                    <a href="{{p.url | prepend: site.github.url}}">{{p.title | upcase}}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
         </ul>
       </div><!--/.nav-collapse -->
     </div>
