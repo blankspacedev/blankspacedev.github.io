@@ -113,6 +113,27 @@ a:focus {
 	SECTIONS
 ################################################################# */
 
+/* header */
+header {
+	background-color: $primary;
+	min-height: 0px;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+
+	h3, h5 {
+		color: white;
+		font-weight: 400;
+	}
+	h1 {
+		color: white;
+		margin-bottom: 25px;
+	}
+	.img-responsive {
+		margin: 0 auto;
+	}
+}
+
 /* Footer */
 footer {
 	padding-top: 60px;
