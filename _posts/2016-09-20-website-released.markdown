@@ -4,9 +4,7 @@ title: "Website Released"
 date: 2016-09-16
 author: jarias
 categories:
-- blog
 - news
-- Code-Snippets
 img: post03.jpg
 thumb: thumb03.jpg
 ---

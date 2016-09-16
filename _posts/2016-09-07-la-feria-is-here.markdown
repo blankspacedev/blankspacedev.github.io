@@ -4,7 +4,6 @@ title: "La Feria is here"
 date: 2016-09-07
 author: jarias
 categories:
-- blog
 - news
 - events
 img: post02.jpg

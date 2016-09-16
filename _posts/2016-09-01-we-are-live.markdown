@@ -4,9 +4,8 @@ title: "Blank Space Developers launched"
 date: 2016-09-01
 author: jarias
 categories:
-- blog
 - news
-- Code-Snippets
+- events
 img: post01.jpg
 thumb: thumb01.jpg
 ---
