@@ -6,3 +6,25 @@ navigation_weight: 1
 ---
 
 {% include header.html  %}
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-5 col-lg-offset-1">
+          <h4>Latest Posts</h4>
+          <div class="hline"></div>
+          {% for post in site.categories['blog'] limit:5 %}
+              <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
+          {% endfor %}
+        </div>
+
+
+        <div class="col-lg-5 col-lg-offset-1">
+            <h4>Upcoming events</h4>
+            <div class="hline"></div>
+            {% for event in site.events limit:5 %}
+                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ event.date | date: "%d/%m/%y" }} - {{ event.title }} @ {{ event.location }}.</a></p>
+            {% endfor %}
+        </div>
+
+    </div><! --/row -->
+</div><! --/container -->
