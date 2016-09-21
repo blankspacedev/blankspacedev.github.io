@@ -5,7 +5,6 @@ date: 2016-09-07
 author: jarias
 categories:
 - news
-- events
 img: post02.jpg
 thumb: thumb02.jpg
 ---
