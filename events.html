@@ -1,0 +1,42 @@
+---
+layout: default
+title: Events
+permalink: /events
+navigation_weight: 3
+---
+
+{% include wrap.html %}
+
+<div class="container mtb">
+    <div class="row">
+
+        <div class="col-lg-8">
+
+           {% assign sorted = (site.events | sort: 'date') | reverse %}
+
+           <h2>Upcoming events:</h2>
+            {% for event in sorted %}
+              {% if event.date > site.time %}
+                <h3><small>{{event.date | date: "%b %-d, %Y" }}</small> - {{event.title}}</h3>
+                <div class="hline"></div>
+                <p>
+                  {{event.content}}
+                </p>
+                <div class="spacing"></div>
+              {%endif%}
+            {% endfor %}
+
+            <h2>Past events:</h2>
+            {% for event in sorted %}
+                <h3><small>{{event.date | date: "%b %-d, %Y" }}</small> - {{event.title}}</h3>
+                <div class="hline"></div>
+                <p>
+                  {{event.content}}
+                </p>
+                <div class="spacing"></div>
+            {% endfor %}
+
+        </div><!--/col-lg-12 -->
+
+    </div><!--/row -->
+</div><!--/container -->
