@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blank Space Developers launched"
-date: 2016-09-01
+date: 2016-10-01
 author: jarias
 categories:
 - news

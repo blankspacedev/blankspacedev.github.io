@@ -12,30 +12,17 @@ navigation_weight: 3
 
         <div class="col-lg-8">
 
-           {% assign sorted = (site.events | sort: 'date') | reverse %}
+           {% assign sorted = (site.posts | sort: 'event_date') | reverse %}
 
-           <h2>Upcoming events:</h2>
             {% for event in sorted %}
-              {% if event.date >= site.time %}
-                <h3><small>{{event.date | date: "%b %-d, %Y" }}</small> {{event.title}}</h3>
+              {% if event.event_date %}
+                <h3><small>{{event.event_date | date: "%b %-d, %Y" }}</small> {{event.title}}</h3>
                 <div class="hline"></div>
                 <p>
                   {{event.content}}
                 </p>
                 <div class="spacing"></div>
               {%endif%}
-            {% endfor %}
-
-            <h2>Past events:</h2>
-            {% for event in sorted %}
-              {% if event.date < site.time %}
-                  <h3><small>{{event.date | date: "%b %-d, %Y" }}</small> {{event.title}}</h3>
-                  <div class="hline"></div>
-                  <p>
-                    {{event.content}}
-                  </p>
-                  <div class="spacing"></div>
-                {%endif%}
             {% endfor %}
 
         </div><!--/col-lg-12 -->
