@@ -11,7 +11,7 @@ navigation_weight: 2
     <div class="row">
 
         <!-- BLOG POSTS LIST -->
-        <div class="col-lg-8">
+        <div class="col-sm-8">
 
             {% for post in site.posts %}
                 <!-- Blog Post -->
@@ -31,7 +31,9 @@ navigation_weight: 2
 
         </div><!--/col-lg-8 -->
 
-        {% include sidebar.html %}
+        <div class="col-sm-4">
+          {% include sidebar.html %}
+        </div>
 
     </div><!--/row -->
 </div><!--/container -->

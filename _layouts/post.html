@@ -9,7 +9,7 @@ parent_nav_url: /blog/
 <div class="container mtb">
     <div class="row">
         <!-- SINGLE POST -->
-        <div class="col-lg-8">
+        <div class="col-md-8">
             <!-- Blog Post  -->
             <h3 class="ctitle"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
             <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
@@ -27,7 +27,10 @@ parent_nav_url: /blog/
             </p> -->
         </div><!--/col-lg-8 -->
 
-        {% include sidebar.html %}
+
+        <div class="col-md-4">
+          {% include sidebar.html %}
+        </div>
 
     </div><!--/row -->
 </div><!--/container -->
