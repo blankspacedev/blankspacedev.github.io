@@ -24,7 +24,8 @@
           {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
               {% for p in navigation_pages %}
                 {% if p.navigation_weight %}
-                  <li {% if p.url == page.url | prepend: site.github.url %} class="active"{% endif %} role="presentation">
+                  {% assign active_page =  %}
+                  <li {% if p.url==page.url or p.url==layout.parent_nav_url %} class="active"{% endif %} role="presentation">
                     <a href="{{p.url | prepend: site.github.url}}">{{p.title | upcase}}</a>
                   </li>
                 {% endif %}
