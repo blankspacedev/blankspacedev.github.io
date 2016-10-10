@@ -23,9 +23,32 @@ url: "http://blankspacedev.com" # the base hostname & protocol for your site
 markdown: kramdown
 theme: minima
 
+# Project structure config
 permalink: /blog/:year/:title.html
 
 include: ["_pages"]
+
+collections:
+  blog_categories:
+    output: true
+    permalink: /blog/category/:slug/
+  blog_tags:
+    output: true
+    permalink: /blog/tag/:slug/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: blog_categories
+    values:
+      layout: blog_category
+  -
+    scope:
+      path: ""
+      type: blog_tags
+    values:
+      layout: blog_tag
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."

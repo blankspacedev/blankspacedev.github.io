@@ -9,7 +9,7 @@
     <div class="hline"></div>
     {% for category in site.categories %}
       <p>
-          <a href="{{ '/category/#'  | prepend: site.baseurl  }}{{ category | first }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
+          <a href="{{ '/blog/category/'  | prepend: site.baseurl  }}{{ category | first }}"><i class="fa fa-angle-right"></i> {{ category | first | capitalize }}</a>
           <span class="badge badge-theme pull-right">{{ category | last | size }}</span>
       </p>
     {% endfor %}

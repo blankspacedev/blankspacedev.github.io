@@ -6,12 +6,8 @@ event_date: 2016-10-21
 author: jarias
 categories:
 - events
-tags:
-- hack&beer
-- web
-- jekyll
-- github
-excerpt: "Introduction to GithubPages with jekyll"
+tags: [hack&beer, web development, jekyll, github]
+summary: "Introduction to GithubPages with jekyll"
 img: hnb.png
 thumb: thumb02.jpg
 ---

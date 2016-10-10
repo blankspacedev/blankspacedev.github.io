@@ -1,39 +1,22 @@
 ---
-layout: default
+layout: blog
 title: Blog
 permalink: /blog/
 navigation_weight: 2
 ---
 
-{% include wrap.html %}
+{% for post in site.posts %}
+    <!-- Blog Post -->
+    <h3 class="ctitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 
-<div class="container mtb">
-    <div class="row">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+        <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">
+    </a>
 
-        <!-- BLOG POSTS LIST -->
-        <div class="col-sm-8">
+    <p class="csmall">{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</p>
+    {{ post.excerpt }}
+    <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
+    <div class="hline"></div>
 
-            {% for post in site.posts %}
-                <!-- Blog Post -->
-                <h3 class="ctitle"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                    <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ post.img }}">
-                </a>
-
-                <p class="csmall">{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</p>
-                {{ post.excerpt }}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">[Read More]</a></p>
-                <div class="hline"></div>
-
-                <div class="spacing"></div>
-            {% endfor %}
-
-        </div><!--/col-lg-8 -->
-
-        <div class="col-sm-4">
-          {% include sidebar.html %}
-        </div>
-
-    </div><!--/row -->
-</div><!--/container -->
+    <div class="spacing"></div>
+{% endfor %}
