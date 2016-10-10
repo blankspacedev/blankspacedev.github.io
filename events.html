@@ -10,18 +10,40 @@ navigation_weight: 3
 <div class="container mtb">
     <div class="row">
 
-        <div class="col-lg-8">
+        <div class="col-lg-12">
 
-           {% assign sorted = (site.posts | sort: 'event_date') | reverse %}
-
+           {% assign sorted = (site.posts | sort: 'event_date') %}
+           {% assign current_month = "" %}
+           <ul>
             {% for event in sorted %}
               {% if event.event_date %}
-                <h3><small>{{event.event_date | date: "%b %-d, %Y" }}</small> {{event.title}}</h3>
-                <div class="hline"></div>
-                <p>
-                  {{event.content}}
-                </p>
-                <div class="spacing"></div>
+                {% assign event_month = (event.event_date | date: "%B")%}
+                {% if current_month != event_month %}
+                  {% assign current_month = event_month %}
+                  </ul>
+                  <h2>{{current_month}}</h2>
+                  <hr class="hline">
+                  <ul id="rig">
+                {% endif %}
+
+                <li>
+
+                  <div class="text-center">
+                    <h4>{{event.event_date | date: "%A %-d" }} - {{event.title}}</h4>
+                  </div>
+                  <a class="rig-cell" href="#">
+                      <img class="rig-img" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ event.img }}" alt="">
+                      <span class="rig-overlay"></span>
+                      <span class="rig-text">
+                        {{event.excerpt}}
+                        <br>
+                        {% for tag in event.tags %}
+                          #{{tag}}&nbsp;
+                        {% endfor %}
+                      </span>
+                  </a>
+                </li>
+
               {%endif%}
             {% endfor %}
 

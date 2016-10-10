@@ -6,8 +6,14 @@ event_date: 2016-10-21
 author: jarias
 categories:
 - events
-img: post01.jpg
-thumb: thumb01.jpg
+tags:
+- hack&beer
+- web
+- jekyll
+- github
+excerpt: "Introduction to GithubPages with jekyll"
+img: hnb.png
+thumb: thumb02.jpg
 ---
 
 <b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

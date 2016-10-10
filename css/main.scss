@@ -14,20 +14,23 @@ URL: http://alvarez.is
 
 ########################################################################### */
 
-// #566a91
-// #428bca;
-$primary: rgba(41, 137, 143, 1);
-$primary_rgb: rgba(41, 137, 143, 0.7);
+// #0a7077
+// #01b2fe;
+$gradientA: #92D3C5;
+$gradientB: #B0CCA6;
+$detail: #E34B30;
+
+$primary: #91d2a9;
+$primary_rgb: rgba(145, 210, 169, 0.7);
 $secondary: #282C34;
-$link: #0a7077;
-$link_hover: #01b2fe;
+$link: #40A9A1;
+$link_hover: #40A9A1;
 $footer_heading: #ffffff;
 $footer_content: #bfc9d3;
 
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
-
 
 /*	################################################################
 	1. GENERAL STRUCTURES
@@ -42,7 +45,7 @@ body {
 	margin: 0;
 	height: 100%;
 	color: $secondary;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	}
 
@@ -54,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	padding: 0;
 	margin-bottom: 12px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
@@ -91,7 +94,7 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
   color: $link_hover;;
 }
 
@@ -116,24 +119,73 @@ a:focus {
 
 /* header */
 header {
-	background-color: $primary;
+	background: $gradientA; /* Old browsers */
+	background: -moz-linear-gradient(45deg,  $gradientA 0%, $gradientB 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$gradientA), color-stop(100%,$gradientB)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* IE10+ */
+	background: linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradientA', endColorstr='$gradientB',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+		 -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+
 	min-height: 0px;
-	padding-top: 100px;
-	padding-bottom: 50px;
 	text-align: center;
 
-	h3, h5 {
-		color: white;
-		font-weight: 400;
-	}
 	h1 {
 		color: white;
-		margin-bottom: 25px;
 	}
 	.img-responsive {
 		margin: 0 auto;
 	}
 }
+
+#headerbg {
+	background: url(../assets/img/abbg.png) no-repeat center top;
+	position: relative;
+	text-align:center;
+	background-attachment: relative;
+	background-position: bottom center;
+	width: 100%;
+
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+
+	padding-top: 100px;
+	padding-bottom: 12%;
+}
+
+.intro {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+	.emphasis {
+		font-size:46px;
+	}
+	p {
+		font-size:22px;
+	}
+}
+
+@media  (max-width: 700px) {
+	 h1 {font-size: 28px;}
+
+	 .intro {
+	 	.emphasis {
+	 		font-size:32px;
+	 	}
+	 	p {
+	 		font-size:16px;
+	 	}
+	 }
+}
+
+
 
 /* Footer */
 footer {
@@ -161,7 +213,17 @@ footer {
 }
 
 .header-slim {
-	background: $primary;
+	background: -moz-linear-gradient(45deg,  $gradientA 0%, $gradientB 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$gradientA), color-stop(100%,$gradientB)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* IE10+ */
+	background: linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradientA', endColorstr='$gradientB',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+		 -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding-top: 25px;
@@ -196,11 +258,6 @@ footer {
 	min-height: 450px;
 	width: 100%;
 
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -221,26 +278,145 @@ footer {
 	}
 }
 
+.about {
+	font-size: 20px;
+}
+
 /* Services Wrap */
 #service {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin-top: 75px;
+	margin-bottom: 100px;
 
 	i {
-		color: $primary;
+		color: $detail;
 		font-size: 60px;
 		padding: 15px;
 	}
 }
+
+
+
+#rig {
+    margin:0 auto; /*center aligned*/
+    padding:0;
+		padding-bottom: 45px;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#FFF;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: $detail;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:18px;
+    font-weight:bold;
+    font-family: 'Oswald', sans-serif;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
 
 /*	################################################################
 	INDIVIDUAL STYLES
 ################################################################# */
 
 .ctitle {
-	color: $primary;
+
 	font-weight: 700;
 	margin-bottom: 15px;
+
+	a {
+		color: $secondary;
+		a:hover,
+		a:focus {
+			text-decoration: underline;
+		}
+	}
 }
 
 .csmall {
@@ -365,8 +541,8 @@ a.anchor{
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $detail;
+  border-color: $detail;
 }
 
 .dmbutton:hover,
@@ -400,11 +576,6 @@ a.anchor{
 	transition: background-color 300ms ease-out;
 	-webkit-appearance: none;
 	font-weight: normal !important;
-}
-
-.mtb {
-	margin-top: 80px;
-	margin-bottom: 80px;
 }
 
 .mb {

@@ -7,51 +7,17 @@ navigation_weight: 1
 
 {% include header.html  %}
 
-<div class="container mtb">
+<div class="container intro">
     <div class="row">
-        <div class="col-lg-5 col-lg-offset-1">
-          <h4>Latest Posts</h4>
-          <div class="hline"></div>
-          {% for post in site.posts limit:5 %}
-              <p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}.</a></p>
-          {% endfor %}
+        <div class="col-lg-12">
+          <span class="emphasis">We do software! </span>
+          <p>
+            Duis in ante eget arcu <b>tempor interdum</b>. Etiam porttitor sollicitudin sapien. Curabitur sodales ultrices elementum. In rutrum blandit pretium. <b>Nunc vel vulputate</b> justo. Nullam vitae pellentesque arcu, vel molestie erat.
+          </p>
         </div>
+    </div><!--/row -->
+</div><!--/container -->
 
+{% include eventgrid.html limit=6 %}
 
-        <div class="col-lg-5 col-lg-offset-1">
-            <h4>Upcoming events</h4>
-            <div class="hline"></div>
-            {% for event in site.events limit:5 %}
-                <p><a href="{{ post.url | prepend: site.baseurl }}">{{ event.date | date: "%d/%m/%y" }} - {{ event.title }} @ {{ event.location }}.</a></p>
-            {% endfor %}
-        </div>
-
-    </div><! --/row -->
-</div><! --/container -->
-
-{% include testimonial.html %}
-
-<div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o"></i>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask"></i>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy"></i>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-        </div>
-    </div><! --/container -->
-</div><! --/service -->
+{% include services.html %}
