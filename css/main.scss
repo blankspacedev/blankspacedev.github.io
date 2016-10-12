@@ -594,3 +594,109 @@ a.anchor{
 	border-bottom: 2px solid #ffffff;
 	margin-bottom: 25px;
 }
+
+
+
+// sponsor grid
+.sponsor-grid {
+
+	.col-xs-4:nth-child(3n+1) {
+    clear: both;
+	}
+
+	.col-md-3:nth-child(4n+1) {
+    clear: both;
+	}
+
+	img {
+		max-height: 75px;
+		min-height: 75px;
+	}
+}
+
+// people grid
+.people-grid {
+
+	.col-xs-4:nth-child(3n+1) {
+    clear: both;
+	}
+
+	.col-md-3:nth-child(4n+1) {
+    clear: both;
+	}
+}
+
+.profile-thumbnail {
+
+	padding: 25px 10px 20px 10px;
+
+	i {
+		font-size: 35px;
+	}
+	a:hover{
+		color:$detail;
+	}
+	img {
+		width: 75%;
+	}
+
+}
+
+.member-wrap {
+	background-color: #FAF6EC;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.member-info {
+		margin-bottom:30px;
+
+	.skew {
+
+		height: 250px;
+
+		-ms-transform: skew(-30deg,0deg);
+		-webkit-transform: skew(-30deg,0deg);
+		transform: skew(-30deg,0deg);
+		/*outline:1px solid #fff;*/
+		overflow: hidden;
+
+		padding: 15px;
+		background-color: $primary;
+		vertical-align: middle;
+
+
+		img, i, p, h3 {
+			-ms-transform: skew(30deg,0deg);
+			-webkit-transform: skew(30deg,0deg);
+			transform: skew(30deg,0deg);
+		}
+
+		img {
+			height: 80%;
+		}
+
+		i {
+			font-size: 25px;
+		}
+
+		p {
+			color: $secondary;
+			font-size: 16px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		a {
+			color: $secondary;
+		}
+
+		a:hover {
+			color: $detail;
+		}
+	}
+
+	.separator {
+		padding-left:20px;
+	}
+}

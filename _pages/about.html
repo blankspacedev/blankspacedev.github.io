@@ -1,0 +1,84 @@
+---
+layout: default
+title: About
+permalink: /about
+navigation_weight: 4
+---
+
+{% include wrap.html %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="text-center">
+        <h2>A community for every developer</h2>
+      </div>
+    </div> <!--End col -->
+  </div> <!--End row -->
+
+    <div class="row">
+      <div class="col-sm-6">
+        Blank Space nace como iniciativa para la ciudad de Albacete... Lorem impsum dolor sit amet.
+      </div> <!--End col -->
+      <div class="col-sm-6">
+        Blank Space started as an initiative... Lorem ipsum dolor sit amet.
+      </div> <!--End col -->
+    </div> <!--End row -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3>Sponsored by</h3>
+        </div>
+      </div> <!--End col -->
+    </div> <!--End row -->
+
+    <div class="row sponsor-grid">
+      {% for sponsor in site.data.sponsors %}
+      <div class="col-md-2 col-xs-3 text-center">
+        <img src="images/sponsors/{{sponsor.slug}}.png" alt="{{sponsor.name}}" />
+      </div>
+      {% endfor %}
+    </div> <!--End row -->
+</div> <!--End container -->
+
+<div class="member-wrap">
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h3>Community members</h3>
+          </div>
+        </div> <!--End col -->
+      </div> <!--End row -->
+
+      {% for person in site.data.people %}
+        <div class="row member-info">
+          <div class="col-xs-4 skew text-center">
+              <img class="img-circle" src="images/people/{{person.name}}.jpg" alt="{{person.name}} photo" >
+          </div>
+
+          <div class="separator">&nbsp;</div>
+
+          <div class="col-xs-1 skew skew-thin text-center">
+              <a href="#"><i class="fa fa-twitter"></i> </a><br><br>
+              <a href="#"><i class="fa fa-linkedin"></i> </a><br><br>
+              <a href="#"><i class="fa fa-github"></i> </a><br><br>
+              <a href="#"><i class="fa fa-globe"></i> </a><br><br>
+          </div>
+
+          <div class="separator">&nbsp;</div>
+
+          <div class="col-sm-5 col-xs-hidden skew">
+            <h3>{{person.name}}</h3>
+            <p>
+              <b>{{person.shortbio}}</b>
+            </p>
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+  </div> <!--End container -->
+</div> <!--End wrap -->
