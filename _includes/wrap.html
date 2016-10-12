@@ -1,7 +1,9 @@
-<div class="header-slim">
-    <div class="container">
-        <div class="row">
-            <h3>{% if layout.wrap_title %}{{ layout.wrap_title }}{% else %}{{ page.title }}{% endif %}</h3>
-        </div><!-- /row -->
-    </div> <!-- /container -->
-</div><!-- /blue -->
+<header>
+  <div id="{{include.bg}}">
+      <div class="container">
+          <div class="row">
+              <h2>{% if layout.wrap_title %}{{ layout.wrap_title }}{% else %}{{ page.title }}{% endif %}</h2>
+          </div><!-- /row -->
+      </div> <!-- /container -->
+  </div><!-- /blue -->
+</header>

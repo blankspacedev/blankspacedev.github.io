@@ -16,12 +16,16 @@ URL: http://alvarez.is
 
 // #0a7077
 // #01b2fe;
-$gradientA: #92D3C5;
-$gradientB: #B0CCA6;
-$detail: #E34B30;
+// $gradientA: #92D3C5;
+// $gradientB: #B0CCA6;
+$gradientA: #282C34;
+$gradientB: #282C34;
 
-$primary: #91d2a9;
-$primary_rgb: rgba(145, 210, 169, 0.7);
+$primary_g: #98C379;
+$primary_r: #E06C75;
+$primary_p: #C678DD;
+$primary_b: #55B5C0;
+
 $secondary: #282C34;
 $link: #40A9A1;
 $link_hover: #40A9A1;
@@ -132,9 +136,8 @@ header {
 					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 
 	min-height: 0px;
-	text-align: center;
 
-	h1 {
+	h1, h2, h3 {
 		color: white;
 	}
 	.img-responsive {
@@ -145,7 +148,6 @@ header {
 #headerbg {
 	background: url(../assets/img/abbg.png) no-repeat center top;
 	position: relative;
-	text-align:center;
 	background-attachment: relative;
 	background-position: bottom center;
 	width: 100%;
@@ -158,6 +160,71 @@ header {
 	padding-top: 100px;
 	padding-bottom: 12%;
 }
+
+#headerbg-slim {
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom center;
+	width: 100%;
+
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+
+	padding-top: 100px;
+	padding-bottom: 8%;
+}
+
+#headerbg-slim-g {
+	background: url(../assets/img/abbg_g.png) no-repeat center top;
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom right;
+	width: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	padding-top: 100px;
+	padding-bottom: 4%;
+}
+
+#headerbg-slim-b {
+	background: url(../assets/img/abbg_b.png) no-repeat center top;
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom right;
+	width: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	padding-top: 100px;
+	padding-bottom: 4%;
+}
+
+#headerbg-slim-p {
+	background: url(../assets/img/abbg_p.png) no-repeat center top;
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom right;
+	width: 100%;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	padding-top: 100px;
+	padding-bottom: 4%;
+}
+
+
 
 .intro {
 	text-align: center;
@@ -208,78 +275,23 @@ footer {
 	}
 
 	i:hover {
-		color: $primary;
+		color: $primary_g;
 	}
 }
 
-.header-slim {
-	background: -moz-linear-gradient(45deg,  $gradientA 0%, $gradientB 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$gradientA), color-stop(100%,$gradientB)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* IE10+ */
-	background: linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradientA', endColorstr='$gradientB',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-		 -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
 
-	margin-top: 60px;
-	margin-bottom: 60px;
-	padding-top: 25px;
-	padding-bottom: 25px;
 
-	h3 {
-		color: white;
-		margin-left: 15px;
-	}
-}
+.intro {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
 
-/* Testimonials Wrap */
-#twrapback {
-    background-color: $primary;
-    background-color: $primary_rgb;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#twrap {
-
-  background: url(../assets/img/t-back.jpg) no-repeat center top;
-  position: relative;
-  margin-top: 0px;
-	padding-top:60px;
-	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 450px;
-	width: 100%;
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-	i {
-		font-size: 50px;
-		color: white;
-		margin-bottom: 25px;
+	.emphasis {
+		font-size:46px;
 	}
 	p {
-		color: white;
-		font-size: 15px;
-		line-height: 30px;
+		font-size:22px;
 	}
-	h2 {
-		color: white;
-	}
-}
-
-.about {
-	font-size: 20px;
 }
 
 /* Services Wrap */
@@ -288,7 +300,7 @@ footer {
 	margin-bottom: 100px;
 
 	i {
-		color: $detail;
+		color: $primary_r;
 		font-size: 60px;
 		padding: 15px;
 	}
@@ -346,7 +358,7 @@ footer {
     bottom: 0;
     right: 0;
     margin: auto;
-    background: $detail;
+    background: $primary_r;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -430,7 +442,7 @@ footer {
 }
 
 .badge-theme {
-	background: $primary;
+	background: $primary_g;
 }
 
 /*	################################################################
@@ -506,11 +518,11 @@ a.anchor{
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: $primary;
+	color: $primary_g;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: $primary;
+	color: $primary_g;
 	background-color: transparent;
 }
 
@@ -541,8 +553,8 @@ a.anchor{
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: $detail;
-  border-color: $detail;
+  background-color: $primary_r;
+  border-color: $primary_r;
 }
 
 .dmbutton:hover,
@@ -634,7 +646,7 @@ a.anchor{
 		font-size: 35px;
 	}
 	a:hover{
-		color:$detail;
+		color:$primary_r;
 	}
 	img {
 		width: 75%;
@@ -662,7 +674,7 @@ a.anchor{
 		overflow: hidden;
 
 		padding: 15px;
-		background-color: $primary;
+		background-color: $primary_g;
 		vertical-align: middle;
 
 
@@ -692,7 +704,7 @@ a.anchor{
 		}
 
 		a:hover {
-			color: $detail;
+			color: $primary_r;
 		}
 	}
 
