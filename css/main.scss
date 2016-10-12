@@ -113,10 +113,6 @@ a:focus {
 	background: $secondary;
 }
 
-.centered {
-	text-align: center
-}
-
 /*	################################################################
 	SECTIONS
 ################################################################# */
@@ -295,10 +291,7 @@ footer {
 }
 
 /* Services Wrap */
-#service {
-	margin-top: 75px;
-	margin-bottom: 100px;
-
+.service {
 	i {
 		color: $primary_r;
 		font-size: 60px;
@@ -684,10 +677,6 @@ a.anchor{
 			transform: skew(30deg,0deg);
 		}
 
-		img {
-			height: 80%;
-		}
-
 		i {
 			font-size: 25px;
 		}
@@ -711,4 +700,20 @@ a.anchor{
 	.separator {
 		padding-left:20px;
 	}
+}
+
+.texture-wrap {
+	background-color: #FAF6EC;
+	margin-top: 75px;
+	margin-bottom: 100px;
+}
+
+.texture-wrap-bg {
+	background: url(../assets/img/texture.png) repeat center center;
+	padding-top:25px;
+	padding-bottom:50px;
+}
+
+.content-wrap {
+	margin-top:75px;
 }
