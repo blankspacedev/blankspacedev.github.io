@@ -136,9 +136,12 @@ footer {
 	background: $pastel_green;
 }
 
-.share i {
-	padding-right: 15px;
-	font-size: 18px;
+.share {
+  i {
+  	padding-right: 15px;
+  	font-size: 20px;
+    color: $pastel_green;
+  }
 }
 
 /* SIDEBAR

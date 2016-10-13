@@ -14,18 +14,18 @@ parent_nav_url: /blog/
 
             <!-- Blog Post  -->
             <h3 class="ctitle">{{ page.title }}</h3>
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
-            <p class="csmall">{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</p>
-
-            {{ content }}
-
-            <!-- <h6>SHARE:</h6>
+            <h5>Posted on {{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</h5>
             <p class="share">
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-tumblr"></i></a>
                 <a href="#"><i class="fa fa-google-plus"></i></a>
-            </p> -->
+            </p>
+
+            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
+
+            {{ content }}
+
         </div><!--/col-lg-8 -->
 
         <!-- The main difference with blog layout is that the sidebar behaves differently -->
