@@ -13,24 +13,35 @@ parent_nav_url: /blog/
         <div class="col-md-8">
 
             <!-- Blog Post  -->
-            <h3 class="ctitle">{{ page.title }}</h3>
-            <h5>Posted on {{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</h5>
-            <p class="share">
-                <a href="https://twitter.com/home?status={{page.url}}">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title={{page.title}}">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-                <a href="https://plus.google.com/share?url={{page.url}}">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-            </p>
-
+            <h3 class="ctitle">{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</small></h3>
+            <h5></h5>
+            <h4>Posted on <a href="#">{{page.categories}}</a></h4>
+            {% for tag in page.tags %}
+            <a class="btn btn-theme btn-xs" href="{{ '/blog/tag/' | prepend: site.github.url }}">
+              #{{tag | capitalize}}
+            </a>
+            {%endfor%}
+            <hr>
             <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.github.url }}{{ page.img }}"></p>
+
+            <div class="share">
+                Share:
+                <span class="pull-right">
+                    <a href="https://twitter.com/home?status={{page.url}}">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title={{page.title}}">
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="https://plus.google.com/share?url={{page.url}}">
+                      <i class="fa fa-google-plus"></i>
+                    </a>
+                </span>
+              </div>
+            <hr>
 
             {{ content }}
 
