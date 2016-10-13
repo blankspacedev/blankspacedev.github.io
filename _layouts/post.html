@@ -43,12 +43,6 @@ parent_nav_url: /blog/
               </div>
             <hr>
 
-            {% if page.event_date %}
-              <h3>Evento</h3>
-              <h4>{{page.event_date | date: "%A %-d, %B"}}</h4>
-              <h4>{{page.event_location}} - {{page.event_hour}}</h4>
-            {% endif %}
-
             <div class="spacing"></div>
 
             {{ content }}

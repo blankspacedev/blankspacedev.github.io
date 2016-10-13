@@ -14,6 +14,12 @@ image: 2016-10-13-hacknbeer.jpg
 thumb: 2016-10-13-hacknbeerthumb.jpg
 ---
 
+### Evento
+
+#### Jueves 20 de Octubre
+#### 21:00 a 21:45
+#### Pub Who's Tommy (Avenida del Arte 1)
+
 El primer evento Hack & Beer en Albacete en el que presentaremos nuestra asociación
 **Blank Space** y disfrutaremos de una noche de buen ambiente, buena cerveza y un
 tutorial en este caso de desarrollo web.
