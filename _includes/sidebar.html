@@ -26,7 +26,7 @@
     <ul class="popular-posts">
         {% for post in site.posts limit:4 %}
             <li>
-                <a href="{{ post.url  | prepend: site.github.url}}"><img src="{{ '/assets/img/blog/thumbs/' | prepend: site.github.url }}{{ post.thumb }}" alt="Popular Post"></a>
+                <a href="{{ post.url  | prepend: site.github.url}}"><img src="{{ '/assets/img/blog/' | prepend: site.github.url }}{{ post.thumb }}" alt="Popular Post"></a>
                 <p><a href="{{ post.url }}">{{ post.title }}</a></p>
             <span class="csmall">Posted on {{ post.date | date_to_string }}</span>
         </li>

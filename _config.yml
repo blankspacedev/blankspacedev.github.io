@@ -30,22 +30,12 @@ tel: +34 8493-4893
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
 about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
-# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-social:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: github
-    url:
-
 # CONFIG
 baseurl: "/" # the subpath of your site, e.g. /blog
 #url: "http://localhost:4000/"
 
 # Build settings
 markdown: kramdown
-theme: minima
 
 gems:
   - jekyll-seo-tag

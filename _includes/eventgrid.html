@@ -6,8 +6,8 @@
       <ul id="rig">
         {% for event in site.posts limit:include.limit %}
         <li>
-            <a class="rig-cell" href="#">
-                <img class="rig-img" src="{{ '/assets/img/blog/' | prepend: site.github.url }}{{ event.img }}" alt="">
+            <a class="rig-cell" href="{{event.url}}">
+                <img class="rig-img" src="{{ '/assets/img/blog/' | prepend: site.github.url }}{{ event.image }}" alt="">
                 <span class="rig-overlay"></span>
                 <span class="rig-text">{{event.title}}</span>
             </a>
