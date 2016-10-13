@@ -1,5 +1,5 @@
 ---
-slug: Eventos
+slug: eventos
 name: Eventos
 title: Blog - Eventos
 ---
