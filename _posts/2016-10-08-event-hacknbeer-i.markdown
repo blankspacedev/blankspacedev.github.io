@@ -3,11 +3,11 @@ layout: post
 title: "Hack & Beer I"
 date: 2016-10-13
 event_date: 2016-10-20
-event_hour: "9:00"
-event_location: Pub Whos Thommys
+event_hour: "21:00"
+event_location: Pub Who's Tommy
 author: jarias
 categories:
-- events
+- eventos
 tags: [hacknbeer, webdev, jekyll, github]
 summary: "Introduction to GithubPages with jekyll"
 image: 2016-10-13-hacknbeer.jpg
@@ -19,7 +19,7 @@ El primer evento Hack & Beer en Albacete en el que presentaremos nuestra asociac
 tutorial en este caso de desarrollo web.
 
 Este será el primero del los que esperamos sean muchos Hack & Beer a lo largo de
-las próximas fechas. El pub Who's Tommys nos abre sus puertas para que podamos
+las próximas fechas. El pub Who's Tommy nos abre sus puertas para que podamos
 pasar un rato agradable, relacionarnos con otros desarrolladores y eventualmente
 aprender algo interesante.
 

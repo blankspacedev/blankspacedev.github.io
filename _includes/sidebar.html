@@ -1,14 +1,14 @@
 <div class="post">
 
-    <h4>Subscribe <i class="fa fa-rss"></i> </h4>
+    <h4>Feed <i class="fa fa-rss"></i> </h4>
     <div class="hline"></div>
       <p>
-        <p class="rss-subscribe">Subscribe to this blog <a href="{{ "/feed.xml" | prepend: site.github.url }}">via RSS</a>.</p>
+        <p class="rss-subscribe">Suscribirse al blog <a href="{{ "/feed.xml" | prepend: site.github.url }}">vía RSS</a>.</p>
       </p>
       <div class="spacing"></div>
 
 
-    <h4>Categories</h4>
+    <h4>Categorías</h4>
     <div class="hline"></div>
     {% for category in site.categories %}
       <p>
@@ -21,20 +21,20 @@
     <div class="spacing"></div>
 
 
-    <h4>Recent Posts</h4>
+    <h4>Publicaciones Recientes</h4>
     <div class="hline"></div>
     <ul class="popular-posts">
         {% for post in site.posts limit:4 %}
             <li>
                 <a href="{{ post.url  | prepend: site.github.url}}"><img src="{{ '/assets/img/blog/' | prepend: site.github.url }}{{ post.thumb }}" alt="Popular Post"></a>
                 <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-            <span class="csmall">Posted on {{ post.date | date_to_string }}</span>
+            <span class="csmall">Publicado el {{ post.date | date_to_string }}</span>
         </li>
         {% endfor %}
     </ul>
     <div class="spacing"></div>
 
-    <h4>Popular Tags</h4>
+    <h4>Etiquetas Populares</h4>
     <div class="hline"></div>
     <p>
     {% for tag in site.tags %}

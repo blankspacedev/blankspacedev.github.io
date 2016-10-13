@@ -20,19 +20,13 @@ twitter:
 #   name:
 #   links:
 
-address:
-  - lines:
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
 email: contact@blankspacedev.com
-tel: +34 8493-4893
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: "Organizamos eventos para mejorar la comunidad de desarrolladores en nuestra ciudad. Creemos que expandir nuestras fronteras profesionales nos ayudará a todos, a la vez que mejorará nuestra visibilidad."
 
 # CONFIG
 baseurl: "/" # the subpath of your site, e.g. /blog
-#url: "http://localhost:4000/"
+# github:
+#   url: "http://127.0.0.1:4000/"
 
 # Build settings
 markdown: kramdown

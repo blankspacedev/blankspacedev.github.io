@@ -13,11 +13,11 @@ parent_nav_url: /blog/
         <div class="col-md-8">
 
             <!-- Blog Post  -->
-            <h3 class="ctitle">{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</small></h3>
+            <h3 class="ctitle">{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}. | Por: {{ page.author }}</small></h3>
             <h5></h5>
-            <h4>Posted on <a href="#">{{page.categories}}</a></h4>
+            <h4>Publicado en <a href="#">{{page.categories}}</a></h4>
             {% for tag in page.tags %}
-            <a class="btn btn-theme btn-xs" href="{{ '/blog/tag/' | prepend: site.github.url }}">
+            <a class="btn btn-theme btn-xs" href="{{ '/blog/tag/' | prepend: site.github.url }}{{ tag }}">
               #{{tag | capitalize}}
             </a>
             {%endfor%}
@@ -25,18 +25,18 @@ parent_nav_url: /blog/
             <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.github.url }}{{ page.image }}"></p>
 
             <div class="share">
-                Share:
+                Comparte:
                 <span class="pull-right">
-                    <a href="https://twitter.com/home?status={{page.url}}">
+                    <a href="https://twitter.com/home?status={{page.url| prepend: site.github.url }}">
                       <i class="fa fa-twitter"></i>
                     </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url| prepend: site.github.url }}">
                       <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title={{page.title}}">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url| prepend: site.github.url }}&title={{page.title}}">
                       <i class="fa fa-linkedin"></i>
                     </a>
-                    <a href="https://plus.google.com/share?url={{page.url}}">
+                    <a href="https://plus.google.com/share?url={{page.url| prepend: site.github.url }}">
                       <i class="fa fa-google-plus"></i>
                     </a>
                 </span>
@@ -48,7 +48,7 @@ parent_nav_url: /blog/
               <h4>{{page.event_date | date: "%A %-d, %B"}}</h4>
               <h4>{{page.event_location}} - {{page.event_hour}}</h4>
             {% endif %}
-            
+
             <div class="spacing"></div>
 
             {{ content }}

@@ -4,8 +4,8 @@ title: "Blank Space Dev Online!"
 date: 2016-10-12
 author: jarias
 categories:
-- news
-img: 2016-10-12-estamos-online.jpg
+- noticias
+image: 2016-10-12-estamos-online.jpg
 thumb: 2016-10-12-estamos-onlinethumb.jpg
 ---
 
@@ -20,10 +20,9 @@ beneficiarnos mucho de compartir nuestras experiencias con otros miembros de la 
 en nuestra ciudad.
 
 Sin más detalles, os invitamos a participar en nuestra iniciativa y tomar parte en el
-futuro de la asociación. Esperamos que nuestro plan tenga buena acogida y futuro y eso
-depende de todos vosotros.
+futuro de la asociación. Esperamos que nuestro plan tenga buena acogida y futuro.
 
-Podéis empezar por seguirnos en [http://facebook.com/blankspacedev] y suscribiros al feed de
+Podéis empezar por seguirnos en [facebook](http://facebook.com/blankspacedev) y suscribiros al feed de
 noticias para estar al día de los próximos eventos.
 
 Un saludo,
