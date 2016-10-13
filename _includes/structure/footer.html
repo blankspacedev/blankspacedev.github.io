@@ -12,8 +12,8 @@
               <h4>Social Links</h4>
               <div class="hline-w"></div>
               <p>
-                  {% for network in site.social %}
-                      <a href="{{ network.url }}"><i class="fa fa-2x fa-{{ network.title }}"></i></a>
+                  {% for network in site.data.social %}
+                      <a href="{{ network.url }}"><i class="fa fa-2x fa-{{ network.icon }}"></i></a>
                   {% endfor %}
               </p>
           </div>

@@ -16,13 +16,21 @@ parent_nav_url: /blog/
             <h3 class="ctitle">{{ page.title }}</h3>
             <h5>Posted on {{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</h5>
             <p class="share">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-tumblr"></i></a>
-                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://twitter.com/home?status={{page.url}}">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}">
+                  <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url={{page.url}}&title={{page.title}}">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://plus.google.com/share?url={{page.url}}">
+                  <i class="fa fa-google-plus"></i>
+                </a>
             </p>
 
-            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
+            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.github.url }}{{ page.img }}"></p>
 
             {{ content }}
 

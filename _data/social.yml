@@ -1,0 +1,15 @@
+- name: facebook
+  icon: facebook
+  url: https://www.facebook.com/blankspacedev
+
+- name: linkedin
+  icon: linkedin-square
+  url: https://www.linkedin.com/groups/8576290
+
+- name: twitter
+  icon: twitter
+  url: https://twitter.com/blankspacedev
+
+- name: github
+  icon: github
+  url: https://github.com/blankspacedev

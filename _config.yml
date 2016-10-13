@@ -1,27 +1,55 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# SEO
 title: Blank Space Developers
-email: contact@blankspacedev.com
 description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://blankspacedev.com" # the base hostname & protocol for your site
+url: "http://blankspacedev.com"
+logo: "assests/img/logo_bs_square.png"
+#image:
+
+twitter:
+  username: blankspacedev
+
+#facebook:
+  #app_id: 1234
+  #publisher: 1234
+  #admins: 1234
+
+#google_site_verification
+
+# social:
+#   name:
+#   links:
+
+address:
+  - lines:
+    - Some Ave, 987,
+    - 23890, New York,
+    - United States.
+email: contact@blankspacedev.com
+tel: +34 8493-4893
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+  - title: github
+    url:
+
+# CONFIG
+baseurl: "/" # the subpath of your site, e.g. /blog
+#url: "http://localhost:4000/"
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-feed
 
 sass:
   sass_dir: _sass
@@ -52,24 +80,3 @@ defaults:
       type: blog_tags
     values:
       layout: blog_tag
-
-# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-
-# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
-social:
-  - title: facebook
-    url:
-  - title: twitter
-    url:
-  - title: github
-    url:
-
-# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
-address:
-  - lines:
-    - Some Ave, 987,
-    - 23890, New York,
-    - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
