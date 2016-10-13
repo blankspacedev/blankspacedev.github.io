@@ -23,6 +23,9 @@ url: "http://blankspacedev.com" # the base hostname & protocol for your site
 markdown: kramdown
 theme: minima
 
+sass:
+  sass_dir: _sass
+
 # Project structure config
 permalink: /blog/:year/:title.html
 

@@ -1,0 +1,125 @@
+
+/* GENERAL STRUCTURES
+========================================================================== */
+
+* {
+	margin: 0;
+	padding: 0px;
+}
+
+body {
+		background: #ffffff;
+		margin: 0;
+		height: 100%;
+		color: $basic_console;
+		font-family: $font_family, sans-serif;
+		font-weight: $font_weight;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $heading_family, sans-serif;
+	font-weight: $heading_weight;
+}
+
+p {
+	padding: 0;
+	margin-bottom: $element-margin-bottom;
+	font-family: $font_family, sans-serif;
+	font-weight: $font_weight;
+	font-size: $font_size;
+	line-height: $line_height;
+	color: $basic_console;
+	margin-top: $element-margin-top;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: $element-hpadding;
+}
+
+ol {
+    margin-left: 0;
+    padding-left: $element-hpadding;
+}
+
+a {
+	@include fading(.4s);
+  color: $link;
+}
+
+a:hover,
+a:focus {
+  text-decoration: $link_hover_decoration;
+  color: $link_hover;;
+}
+
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background: $basic_console;
+}
+
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background: $basic_console;
+}
+
+/* BOOTSTRAP MODIFICATIONS & TWEAKS
+========================================================================== */
+
+.navbar {
+	min-height: 70px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+
+.navbar-brand {
+	padding-top: 5px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: $navbar_font_color;
+	font-weight: $navbar_font_weight;
+	font-size: $navbar_font_size;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: $navbar_font_active;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: $navbar_font_active;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-color: $basic_console;
+	border-color: transparent;
+}
+
+.dropdown-menu {
+	background: $basic_console;
+}
+
+.dropdown-menu > li > a {
+	color: $navbar_font_color;
+	font-weight: $navbar_font_weight;
+	font-size: $navbar_font_size;
+}
+
+.btn-theme {
+  color: #fff;
+  background-color: $basic_console;
+  border-color: $basic_console;
+  margin: 4px;
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+  color: #fff;
+  background-color: $pastel_red;
+  border-color: $pastel_red;
+}

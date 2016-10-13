@@ -5,602 +5,45 @@
 
 
 /* ########################################################################
-
 ORIGINALY BASED ON THE BOOTSTRAP THEME:
-
 Project Name: SOLID - Bootstrap 3 Theme
 Version: 1.0
 URL: http://alvarez.is
-
 ########################################################################### */
 
-// #0a7077
-// #01b2fe;
-// $gradientA: #92D3C5;
-// $gradientB: #B0CCA6;
-$gradientA: #282C34;
-$gradientB: #282C34;
 
-$primary_g: #98C379;
-$primary_r: #E06C75;
-$primary_p: #C678DD;
-$primary_b: #55B5C0;
-
-$secondary: #282C34;
-$link: #40A9A1;
-$link_hover: #40A9A1;
-$footer_heading: #ffffff;
-$footer_content: #bfc9d3;
-
+/* VENDOR - Default fall-backs and external files.
+========================================================================== */
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
-/*	################################################################
-	1. GENERAL STRUCTURES
-################################################################# */
-* {
-	margin: 0;
-	padding: 0px;
-}
 
-body {
-	background: #ffffff;
-	margin: 0;
-	height: 100%;
-	color: $secondary;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	}
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-}
+@import '_variables.scss';
+@import '_mixins.scss';
+//@import '_placeholders.scss';
 
-p {
-	padding: 0;
-	margin-bottom: 12px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	color: $secondary;
-	margin-top: 10px;
-}
 
-img {
-	height: auto;
-	max-width: 100%;
-}
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
 
-ul {
-    margin-left: 0;
-    padding-left: 20px;
-}
+@import 'structure.scss';
+@import 'layout.scss';
+@import 'environments.scss';
 
-ol {
-    margin-left: 0;
-    padding-left: 26px;
-}
 
-a {
-  color: $link;
-  padding: 0;
-	margin: 0;
-	text-decoration: none;
-	-webkit-transition: background-color .4s linear, color .4s linear;
-	-moz-transition: background-color .4s linear, color .4s linear;
-	-o-transition: background-color .4s linear, color .4s linear;
-	-ms-transition: background-color .4s linear, color .4s linear;
-	transition: background-color .4s linear, color .4s linear;
-}
+/* MODULES - Re-usable site elements.
+========================================================================== */
 
-a:hover,
-a:focus {
-  text-decoration: underline;
-  color: $link_hover;;
-}
+@import 'rigs.scss';
 
-::-moz-selection  {
-	color: #fff;
-	text-shadow:none;
-	background: $secondary;
-}
-::selection {
-	color: #fff;
-	text-shadow:none;
-	background: $secondary;
-}
-
-/*	################################################################
-	SECTIONS
-################################################################# */
-
-/* header */
-header {
-	background: $gradientA; /* Old browsers */
-	background: -moz-linear-gradient(45deg,  $gradientA 0%, $gradientB 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,$gradientA), color-stop(100%,$gradientB)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* IE10+ */
-	background: linear-gradient(45deg,  $gradientA 0%,$gradientB 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$gradientA', endColorstr='$gradientB',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-		 -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-					box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
-
-	min-height: 0px;
-
-	h1, h2, h3 {
-		color: white;
-	}
-	.img-responsive {
-		margin: 0 auto;
-	}
-}
-
-#headerbg {
-	background: url(../assets/img/abbg.png) no-repeat center top;
-	position: relative;
-	background-attachment: relative;
-	background-position: bottom center;
-	width: 100%;
-
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
-
-	padding-top: 100px;
-	padding-bottom: 12%;
-}
-
-#headerbg-slim {
-	position: relative;
-	background-attachment: relative;
-	background-position: bottom center;
-	width: 100%;
-
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
-
-	padding-top: 100px;
-	padding-bottom: 8%;
-}
-
-#headerbg-slim-g {
-	background: url(../assets/img/abbg_g.png) no-repeat center top;
-	position: relative;
-	background-attachment: relative;
-	background-position: bottom right;
-	width: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	padding-top: 100px;
-	padding-bottom: 4%;
-}
-
-#headerbg-slim-b {
-	background: url(../assets/img/abbg_b.png) no-repeat center top;
-	position: relative;
-	background-attachment: relative;
-	background-position: bottom right;
-	width: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	padding-top: 100px;
-	padding-bottom: 4%;
-}
-
-#headerbg-slim-p {
-	background: url(../assets/img/abbg_p.png) no-repeat center top;
-	position: relative;
-	background-attachment: relative;
-	background-position: bottom right;
-	width: 100%;
-
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-
-	padding-top: 100px;
-	padding-bottom: 4%;
-}
-
-
-
-.intro {
-	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-	.emphasis {
-		font-size:46px;
-	}
-	p {
-		font-size:22px;
-	}
-}
-
-@media  (max-width: 800px) {
-	 h1 {font-size: 28px;}
-
-	 .intro {
-	 	.emphasis {
-	 		font-size:32px;
-	 	}
-	 	p {
-	 		font-size:16px;
-	 	}
-	 }
-}
-
-
-
-/* Footer */
-footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	background: $secondary;
-
-	p {
-		color: $footer_content;
-	}
-
-	h4 {
-		color: $footer_heading;
-	}
-
-	i {
-		font-size: 30px;
-		color: $footer_content;
-		padding-right: 25px;
-	}
-
-	i:hover {
-		color: $primary_g;
-	}
-}
-
-
-
-.intro {
-	text-align: center;
-	margin-top: 5%;
-	margin-bottom: 5%;
-
-	.emphasis {
-		font-size:46px;
-	}
-	p {
-		font-size:22px;
-	}
-}
-
-/* Services Wrap */
-.service {
-	i {
-		color: $primary_r;
-		font-size: 60px;
-		padding: 15px;
-	}
-}
-
-
-
-#rig {
-    margin:0 auto; /*center aligned*/
-    padding:0;
-		padding-bottom: 45px;
-    font-size:0; /* Remember to change it back to normal font size if have captions */
-    list-style:none;
-    background-color:#FFF;
-}
-#rig li {
-    display: inline-block;
-    *display:inline;/*for IE6 - IE7*/
-    width:25%;
-    vertical-align:middle;
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
-
-/* The wrapper for each item */
-.rig-cell {
-    /*margin:12px;
-    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
-    display:block;
-    position: relative;
-    overflow:hidden;
-}
-
-/* If have the image layer */
-.rig-img {
-    display:block;
-    width: 100%;
-    height: auto;
-    border:none;
-    transform:scale(1);
-    transition:all 1s;
-}
-
-#rig li:hover .rig-img {
-    transform:scale(1.05);
-}
-
-/* If have the overlay layer */
-.rig-overlay {
-    position: absolute;
-    display:block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: $primary_r;
-    background-size:50px 50px;
-    opacity:0;
-    filter:alpha(opacity=0);/*For IE6 - IE8*/
-    transition:all 0.6s;
-}
-#rig li:hover .rig-overlay {
-    opacity:0.8;
-}
-
-/* If have captions */
-.rig-text {
-    display:block;
-    padding:0 30px;
-    box-sizing:border-box;
-    position:absolute;
-    left:0;
-    width:100%;
-    text-align:center;
-    text-transform:capitalize;
-    font-size:18px;
-    font-weight:bold;
-    font-family: 'Oswald', sans-serif;
-    font-weight:normal!important;
-    top:40%;
-    color:white;
-    opacity:0;
-    filter:alpha(opacity=0);/*For older IE*/
-    transform:translateY(-20px);
-    transition:all .3s;
-}
-#rig li:hover .rig-text {
-    transform:translateY(0px);
-    opacity:0.9;
-}
-
-@media (max-width: 9000px) {
-    #rig li {
-        width:33.33%;
-    }
-}
-
-@media (max-width: 700px) {
-    #rig li {
-        width:33.33%;
-    }
-}
-
-@media (max-width: 550px) {
-    #rig li {
-        width:50%;
-    }
-}
-
-
-/*	################################################################
-	INDIVIDUAL STYLES
-################################################################# */
-
-.ctitle {
-
-	font-weight: 700;
-	margin-bottom: 15px;
-
-	a {
-		color: $secondary;
-		a:hover,
-		a:focus {
-			text-decoration: underline;
-		}
-	}
-}
-
-.csmall {
-	font-size: 12px;
-	color: #b3b3b3;
-}
-
-.spacing {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.badge-theme {
-	background: $primary_g;
-}
 
 /*	################################################################
 	PAGE CONFIGURATIONS
 ################################################################# */
-
-/* Blog Page */
-.popular-posts {
-	margin: 0px;
-	padding-left: 0px;
-	}
-
-.popular-posts li {
-	list-style: none;
-	margin-bottom: 20px;
-	min-height: 70px;
-}
-.popular-posts li a,
-.popular-posts li a:hover {
-	color:#2f2f2f;
-	text-decoration: none;
-	}
-
-.popular-posts li img {
-	float: left;
-	margin-right: 20px;
-	}
-
-.popular-posts li em {
-	font-family: 'Lato', sans-serif;
-	font-size: 12px;
-	color: #b3b3b3
-	}
-
-.popular-posts p {
-	line-height: normal;
-	margin-bottom: auto;
-}
-
-.share i {
-	padding-right: 15px;
-	font-size: 18px;
-}
-
-a.anchor{
-    display: block;
-    position: relative;
-    top: -80px;
-    visibility: hidden;
-}
-
-/*	################################################################
-	BOOTSTRAP MODIFICATIONS & TWEAKS
-################################################################# */
-.navbar {
-	min-height: 70px;
-	padding-top: 10px;
-	margin-bottom: 0px;
-}
-
-.navbar-brand {
-	padding-top: 5px;
-}
-
-.navbar-header .navbar-brand {
-	color: white;
-}
-
-.navbar-default .navbar-nav > li > a {
-	color: white;
-	font-weight: 700;
-	font-size: 12px;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-	color: $primary_g;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: $primary_g;
-	background-color: transparent;
-}
-
-.navbar-default {
-	background-color: $secondary;
-	border-color: transparent;
-}
-
-.dropdown-menu {
-	background: $secondary;
-}
-
-.dropdown-menu > li > a {
-	color: white;
-	font-weight: 700;
-	font-size: 12px;
-}
-
-.btn-theme {
-  color: #fff;
-  background-color: $secondary;
-  border-color: $secondary;
-  margin: 4px;
-}
-.btn-theme:hover,
-.btn-theme:focus,
-.btn-theme:active,
-.btn-theme.active,
-.open .dropdown-toggle.btn-theme {
-  color: #fff;
-  background-color: $primary_r;
-  border-color: $primary_r;
-}
-
-.dmbutton:hover,
-.dmbutton:active,
-.dmbutton:focus{
-	color: #ffffff;
-	background-color: #222222;
-	border-color: #ffffff;
-}
-.dmbutton {
-	background:rgba(0, 0, 0, 0);
-	border: 1px solid #ffffff;
-	color: #ffffff;
-	-webkit-border-radius: 2px;
-	border-radius: 2px;
-	padding-top: 1.025rem;
-	padding-right: 2.25rem;
-	letter-spacing:0.85px;
-	padding-bottom: 1.0875rem;
-	padding-left: 2.25rem;
-	font-size: 1.55rem;
-	cursor: pointer;
-	font-weight: normal;
-	line-height: normal;
-	margin: 0 0 1.25rem;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-	-webkit-transition: background-color 300ms ease-out;
-	-moz-transition: background-color 300ms ease-out;
-	transition: background-color 300ms ease-out;
-	-webkit-appearance: none;
-	font-weight: normal !important;
-}
-
-.mb {
-	margin-bottom: 60px;
-}
-
-.mt {
-	margin-top: 60px;
-}
-
-.hline {
-	border-bottom: 2px solid $secondary;
-}
-
-.hline-w {
-	border-bottom: 2px solid #ffffff;
-	margin-bottom: 25px;
-}
-
-
 
 // sponsor grid
 .sponsor-grid {
@@ -639,7 +82,7 @@ a.anchor{
 		font-size: 35px;
 	}
 	a:hover{
-		color:$primary_r;
+		color:$pastel_red;
 	}
 	img {
 		width: 75%;
@@ -667,7 +110,7 @@ a.anchor{
 		overflow: hidden;
 
 		padding: 15px;
-		background-color: $primary_g;
+		background-color: $pastel_green;
 		vertical-align: middle;
 
 
@@ -682,38 +125,22 @@ a.anchor{
 		}
 
 		p {
-			color: $secondary;
+			color: $basic_console;
 			font-size: 16px;
 			padding-left: 40px;
 			padding-right: 40px;
 		}
 
 		a {
-			color: $secondary;
+			color: $basic_console;
 		}
 
 		a:hover {
-			color: $primary_r;
+			color: $pastel_red;
 		}
 	}
 
 	.separator {
 		padding-left:20px;
 	}
-}
-
-.texture-wrap {
-	background-color: #FAF6EC;
-	margin-top: 75px;
-	margin-bottom: 100px;
-}
-
-.texture-wrap-bg {
-	background: url(../assets/img/texture.png) repeat center center;
-	padding-top:25px;
-	padding-bottom:50px;
-}
-
-.content-wrap {
-	margin-top:75px;
 }

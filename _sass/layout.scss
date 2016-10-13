@@ -1,0 +1,166 @@
+
+/* HEADERS:
+======================================================================== */
+
+header {
+	background: $gradientA; /* Old browsers */
+
+	h1, h2, h3 {
+		color: white;
+	}
+
+	.img-responsive {
+		margin: 0 auto;
+	}
+}
+
+#headerbg {
+	background: url(../assets/img/abbg.png) no-repeat center top;
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom center;
+	width: 100%;
+
+  @include bgsize(contain);
+
+	padding-top: 100px;
+	padding-bottom: 12%;
+}
+
+%headerbg-slim {
+	position: relative;
+	background-attachment: relative;
+	background-position: bottom right;
+	width: 100%;
+
+  @include bgsize(cover);
+
+	padding-top: 100px;
+	padding-bottom: 8%;
+}
+
+#headerbg-slim-g {
+  @extend %headerbg-slim;
+	background: url(../assets/img/abbg_g.png) no-repeat right top;
+  @include bgsize(cover);
+}
+
+#headerbg-slim-b {
+  @extend %headerbg-slim;
+  background: url(../assets/img/abbg_b.png) no-repeat right top;
+  @include bgsize(cover);
+}
+
+#headerbg-slim-p {
+  @extend %headerbg-slim;
+	background: url(../assets/img/abbg_p.png) no-repeat right top;
+	@include bgsize(cover);
+}
+
+/* FOOTER:
+======================================================================== */
+
+footer {
+  margin-top: 100px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: $basic_console;
+
+	p {
+		color: $footer_content;
+	}
+
+	h4 {
+		color: $footer_heading;
+	}
+
+	i {
+		font-size: 30px;
+		color: $footer_content;
+		padding-right: 25px;
+	}
+
+	i:hover {
+    @include fading(.4s);
+		color: $pastel_green;
+	}
+}
+
+
+/* WRAPPERS:
+======================================================================== */
+
+// Main wrapper
+.content-wrap {
+	margin-top:$wrapper-margin-top;
+  margin-bottom: $wrapper-margin-bottom;
+}
+
+.texture-wrap {
+	background-color: #FAF6EC;
+	margin-top: $wrapper-margin-top;
+	margin-bottom: $wrapper-margin-bottom;
+}
+
+.texture-wrap-bg {
+	background: url(../assets/img/texture.png) repeat center center;
+}
+
+
+/* BLOG
+======================================================================== */
+
+.post {
+  margin-top: $wrapper-margin-top;
+	margin-bottom: $wrapper-margin-bottom;
+}
+
+.ctitle {
+	margin-bottom: $element-margin-bottom;
+
+	a {
+		color: $basic_console;
+		a:hover,
+		a:focus {
+			text-decoration: underline;
+		}
+	}
+}
+
+.csmall {
+	font-size: 12px;
+	color: $detail_grey;
+}
+
+.badge-theme {
+	background: $pastel_green;
+}
+
+.share i {
+	padding-right: 15px;
+	font-size: 18px;
+}
+
+/* SIDEBAR
+====================== */
+
+.popular-posts {
+	margin: 0px;
+	padding-left: 0px;
+
+	li {
+		list-style: none;
+		margin-bottom: 20px;
+		min-height: 70px;
+	}
+
+	a, a:hover {
+		color:$basic_console;
+		text-decoration: none;
+	}
+
+	img {
+		float: left;
+		margin-right: 20px;
+	}
+}

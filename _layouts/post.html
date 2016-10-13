@@ -4,20 +4,21 @@ wrap_title: Blog
 parent_nav_url: /blog/
 ---
 
-{% include wrap.html bg='headerbg-slim-g'%}
+{% include wrap.html bg='headerbg-slim-p'%}
 
 <div class="container content-wrap">
     <div class="row">
+
         <!-- SINGLE POST -->
         <div class="col-md-8">
+
             <!-- Blog Post  -->
-            <h3 class="ctitle"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
+            <h3 class="ctitle">{{ page.title }}</h3>
             <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
             <p class="csmall">{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</p>
 
             {{ content }}
 
-            <div class="spacing"></div>
             <!-- <h6>SHARE:</h6>
             <p class="share">
                 <a href="#"><i class="fa fa-twitter"></i></a>

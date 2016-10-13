@@ -1,0 +1,29 @@
+
+// Aux
+.spacing {
+  margin-top: $wrapper-margin-top;
+}
+
+// Graphic Elements:
+.hline {
+	border-bottom: 2px solid $basic_console;
+}
+
+.hline-w {
+	border-bottom: 2px solid #ffffff;
+	margin-bottom: 25px;
+}
+
+// Special Typography
+.big-quote {
+  font-size: 18px;
+}
+
+// Big icons
+.services {
+	i {
+		color: $pastel_red;
+		font-size: 60px;
+		padding: 15px;
+	}
+}
