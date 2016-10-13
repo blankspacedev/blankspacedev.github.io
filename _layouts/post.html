@@ -15,7 +15,7 @@ parent_nav_url: /blog/
             <!-- Blog Post  -->
             <h3 class="ctitle">{{ page.title }} <small>{{ page.date | date: "%b %-d, %Y" }}. | Por: {{ page.author }}</small></h3>
             <h5></h5>
-            <h4>Publicado en <a href="{{ '/blog/category/' | prepend: site.github.url }}{{ page.categories }}">{{page.categories}}</a></h4>
+            <h4>Publicado en <a href="{{ '/blog/category/' | prepend: site.github.url }}{{ page.categories | first }}">{{page.categories}}</a></h4>
             {% for tag in page.tags %}
             <a class="btn btn-theme btn-xs" href="{{ '/blog/tag/' | prepend: site.github.url }}{{ tag }}">
               #{{tag | capitalize}}
