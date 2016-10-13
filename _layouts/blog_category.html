@@ -9,7 +9,7 @@ parent_nav_url: /blog/
         <h3 class="ctitle"><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h3>
 
         <a href="{{ post.url | prepend: site.github.url }}">
-            <img class="img-responsive" src="{{ "assets/img/blog/" | prepend: site.github.url }}{{ post.image }}">
+            <img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.github.url }}{{ post.image }}">
         </a>
 
         <p class="csmall">{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</p>
