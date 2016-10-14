@@ -47,7 +47,7 @@ estáticas *Jekyll*, que sirve como motor interno a las propias *GithubPages*.
 
 Bien seas un experto en el tema o nunca hayas oído hablar de ello, esta charla resultará
 interesante para aprender algo nuevo o debatir experiencias con otros desarrolladores
-que conozcan la materia.
+que conozcan la materia. 
 
 * **Prerrequisitos:** (nivel básico) HTML, CSS.
 * **Transversales:** Bootstrap3, Sass, Gulp.
