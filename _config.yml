@@ -3,7 +3,7 @@
 title: Blank Space Developers
 description: ""
 url: "http://blankspacedev.com"
-logo: "assests/img/logo_bs_square.png"
+logo: "assets/img/logo_bs_square.png"
 #image:
 
 twitter:
@@ -25,8 +25,8 @@ about: "Organizamos eventos para mejorar la comunidad de desarrolladores en nues
 
 # CONFIG
 baseurl: "/" # the subpath of your site, e.g. /blog
-# github:
-#  url: "http://127.0.0.1:4000"
+github:
+ url: "http://127.0.0.1:4000"
 
 # Build settings
 markdown: kramdown
