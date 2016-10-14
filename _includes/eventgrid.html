@@ -7,7 +7,7 @@
         {% for event in site.posts limit:include.limit %}
         <li>
             <a class="rig-cell" href="{{event.url | prepend: site.github.url}}">
-                <img class="rig-img" src="{{ '/assets/img/blog/' | prepend: site.github.url }}{{ event.image }}" alt="">
+                <img class="rig-img" src="{{ event.image | prepend: site.github.url }}|{{ event.image | prepend: site.github.url }}" alt="">
                 <span class="rig-overlay"></span>
                 <span class="rig-text">{{event.title}}</span>
             </a>

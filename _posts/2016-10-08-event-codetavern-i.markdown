@@ -10,8 +10,8 @@ categories:
 - eventos
 tags: [codetavern, webdev, jekyll, github]
 summary: "Introduction to GithubPages with jekyll"
-image: 2016-10-13-codetavern.jpg
-thumb: 2016-10-13-codetavernthumb.jpg
+image: assets/img/blog/2016-10-13-codetavern.jpg
+thumb: assets/img/blog/2016-10-13-codetavernthumb.jpg
 ---
 
 ### Evento
