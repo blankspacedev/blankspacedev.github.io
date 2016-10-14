@@ -2,12 +2,12 @@
 layout: post
 title: "Blank Space Dev Alive!"
 date: 2016-10-12
-author: jarias
+author: blankspacedev
 categories:
 - noticias
 tags: [BlankSpace]
-image: assets/img/blog/2016-10-12-estamos-online.jpg
-thumb: assets/img/blog/2016-10-12-estamos-onlinethumb.jpg
+image: /assets/img/blog/2016-10-12-estamos-online.jpg
+thumb: /assets/img/blog/2016-10-12-estamos-onlinethumb.jpg
 ---
 
 **Blank Space** nace como una asociación sin ánimo de lucro con el objetivo de

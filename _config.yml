@@ -26,7 +26,7 @@ about: "Organizamos eventos para mejorar la comunidad de desarrolladores en nues
 # CONFIG
 baseurl: "/" # the subpath of your site, e.g. /blog
 # github:
-#   url: "http://127.0.0.1:4000/"
+#  url: "http://127.0.0.1:4000"
 
 # Build settings
 markdown: kramdown

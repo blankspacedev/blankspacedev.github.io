@@ -5,13 +5,13 @@ date: 2016-10-13
 event_date: 2016-10-20
 event_hour: "21:00"
 event_location: Pub Who's Tommy
-author: jarias
+author: blankspacedev
 categories:
 - eventos
 tags: [codetavern, webdev, jekyll, github]
 summary: "Introduction to GithubPages with jekyll"
-image: assets/img/blog/2016-10-13-codetavern.jpg
-thumb: assets/img/blog/2016-10-13-codetavernthumb.jpg
+image: /assets/img/blog/2016-10-13-codetavern.jpg
+thumb: /assets/img/blog/2016-10-13-codetavernthumb.jpg
 ---
 
 ### Evento

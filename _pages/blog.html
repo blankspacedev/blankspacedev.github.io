@@ -11,7 +11,7 @@ navigation_weight: 2
       <h3 class="ctitle"><a href="{{ post.url | prepend: site.github.url}}">{{ post.title }}</a></h3>
 
       <a href="{{ post.url | prepend: site.github.url}}">
-          <img class="img-responsive" src="{{ event.image | prepend: site.github.url }}| prepend: site.github.url }}{{ post.image }}">
+          <img class="img-responsive" src="{{ post.image | prepend: site.github.url }}">
       </a>
 
       <p class="csmall">{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</p>
