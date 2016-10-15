@@ -41,6 +41,13 @@ permalink: /blog/:year/:title.html
 
 include: ["_pages"]
 
+exclude: ["_app",
+          "Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"]
+
 collections:
   blog_categories:
     output: true
