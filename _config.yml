@@ -24,7 +24,7 @@ email: contact@blankspacedev.com
 about: "Organizamos eventos para mejorar la comunidad de desarrolladores en nuestra ciudad. Creemos que expandir nuestras fronteras profesionales nos ayudará a todos, a la vez que mejorará nuestra visibilidad."
 
 # CONFIG
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown

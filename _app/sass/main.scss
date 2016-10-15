@@ -1,0 +1,145 @@
+// Jarias (http://jarias.es)
+
+
+/* ########################################################################
+ORIGINALY BASED ON THE BOOTSTRAP THEME:
+Project Name: SOLID - Bootstrap 3 Theme
+Version: 1.0
+URL: http://alvarez.is
+########################################################################### */
+
+
+/* VENDOR - Default fall-backs and external files.
+========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+
+/* BASE - Base Variable file along with starting point Mixins and Placeholders.
+========================================================================== */
+
+@import 'partials/_variables.scss';
+@import 'partials/_mixins.scss';
+//@import '_placeholders.scss';
+
+
+/* FRAMEWORK - Structure and layout files.
+========================================================================== */
+
+@import 'partials/_structure.scss';
+@import 'partials/_layout.scss';
+@import 'partials/_environments.scss';
+
+
+/* MODULES - Re-usable site elements.
+========================================================================== */
+
+@import 'partials/_rigs.scss';
+
+
+/*	################################################################
+	PAGE CONFIGURATIONS
+################################################################# */
+
+// sponsor grid
+.sponsor-grid {
+
+	.col-xs-4:nth-child(3n+1) {
+    clear: both;
+	}
+
+	.col-md-3:nth-child(4n+1) {
+    clear: both;
+	}
+
+	img {
+		max-height: 75px;
+		min-height: 75px;
+	}
+}
+
+// people grid
+.people-grid {
+
+	.col-xs-4:nth-child(3n+1) {
+    clear: both;
+	}
+
+	.col-md-3:nth-child(4n+1) {
+    clear: both;
+	}
+}
+
+.profile-thumbnail {
+
+	padding: 25px 10px 20px 10px;
+
+	i {
+		font-size: 35px;
+	}
+	a:hover{
+		color:$pastel_red;
+	}
+	img {
+		width: 75%;
+	}
+
+}
+
+.member-wrap {
+	background-color: #FAF6EC;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.member-info {
+		margin-bottom:30px;
+
+	.skew {
+
+		height: 250px;
+
+		-ms-transform: skew(-30deg,0deg);
+		-webkit-transform: skew(-30deg,0deg);
+		transform: skew(-30deg,0deg);
+		/*outline:1px solid #fff;*/
+		overflow: hidden;
+
+		padding: 15px;
+		background-color: $pastel_green;
+		vertical-align: middle;
+
+
+		img, i, p, h3 {
+			width:50%;
+			-ms-transform: skew(30deg,0deg);
+			-webkit-transform: skew(30deg,0deg);
+			transform: skew(30deg,0deg);
+		}
+
+		i {
+			font-size: 25px;
+		}
+
+		p {
+			color: $basic_console;
+			font-size: 16px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		a {
+			color: $basic_console;
+		}
+
+		a:hover {
+			color: $pastel_red;
+		}
+	}
+
+	.separator {
+		padding-left:20px;
+	}
+
+}
