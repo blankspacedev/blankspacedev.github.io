@@ -5,7 +5,7 @@ date: 2016-10-12
 author: blankspacedev
 categories:
 - noticias
-tags: [BlankSpace]
+tags: [blankspace]
 image: images/blog/2016-10-12-estamos-online.jpg
 thumb: images/blog/2016-10-12-estamos-onlinethumb.jpg
 ---
