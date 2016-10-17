@@ -35,19 +35,17 @@ aprender algo interesante.
 
 Os esperamos a todos el jueves 20 en el pub.
 
-(Estamos en periodo de negociación para pizza y tapas gratis a los asistentes)
-
 ------------------------
 
 En esta charla hablaremos del uso de *GithubPages* como hosting gratuito para las páginas
-y la documentación de nuestros proyectos, así como de páginas personales y de instituciones.
+y la documentación de nuestros proyectos, así como para páginas personales y de organizaciones.
 
 Aprovechando el contexto impartiremos un tutorial práctico sobre el generador de páginas
-estáticas *Jekyll*, que sirve como motor interno a las propias *GithubPages*.
+estáticas *Jekyll*, que usan las propias *GithubPages* como motor interno.
 
 Bien seas un experto en el tema o nunca hayas oído hablar de ello, esta charla resultará
 interesante para aprender algo nuevo o debatir experiencias con otros desarrolladores
 que conozcan la materia.
 
-* **Prerrequisitos:** (nivel básico) HTML, CSS.
+* **Prerrequisitos:** (nivel básico) HTML, CSS, Git.
 * **Transversales:** Bootstrap3, Sass, Gulp.
