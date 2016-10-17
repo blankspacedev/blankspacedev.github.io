@@ -1,8 +1,9 @@
-const gulp    = require('gulp');
-const concat  = require('gulp-concat');
-const sass    = require('gulp-sass');
-const child   = require('child_process');
-const gutil   = require('gulp-util');
+const gulp      = require('gulp');
+const concat    = require('gulp-concat');
+const cleancss  = require('gulp-minify-css');
+const child     = require('child_process');
+const sass      = require('gulp-sass');
+const gutil     = require('gulp-util');
 
 var paths = require('./_app/gulp/paths');
 
@@ -10,6 +11,7 @@ gulp.task('css', () => {
   gulp.src(paths.appSassFilesGlob)
     .pipe(sass())
     .pipe(concat('main.css'))
+    .pipe(cleancss())
     .pipe(gulp.dest(paths.jekyllStyleFiles))
 });
 
