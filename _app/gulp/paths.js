@@ -15,7 +15,7 @@ paths.imageFolderName   = 'images';
 
 
 // App files locations
-paths.appSassFiles   = paths.appDir  + "sass";
+paths.appSassFiles   = paths.appDir  + "sass/**/";
 paths.appImageFiles  = paths.appDir  + paths.imageFolderName;
 paths.appAssetsFiles = paths.appDir  + paths.assetsFolderName;
 
