@@ -7,11 +7,12 @@ paths.siteDir            = '_site/'; // The resulting static site
 
 
 // Folder naming conventions
-paths.postFolderName    = '_posts';
-paths.draftFolderName   = '_drafts';
-paths.pagesFolderName   = '_pages';
-paths.assetsFolderName  = 'assets';
-paths.imageFolderName   = 'images';
+paths.postFolderName       = '_posts';
+paths.draftFolderName      = '_drafts';
+paths.pagesFolderName      = '_pages';
+paths.assetsFolderName     = 'assets';
+paths.imageFolderName      = 'images';
+paths.partialsFolderName   = '_includes';
 
 
 // App files locations
@@ -26,7 +27,7 @@ paths.jekyllDraftFiles = paths.jekyllDir + paths.draftFolderName;
 paths.jekyllHtmlFiles  = paths.jekyllDir + paths.pagesFolderName;
 paths.jekyllImageFiles = paths.jekyllDir + paths.imageFolderName;
 
-paths.jekyllStyleFiles = paths.jekyllDir + paths.assetsFolderName;
+paths.jekyllStyleFiles = paths.jekyllDir + paths.partialsFolderName;
 
 
 // Glob patterns by file type

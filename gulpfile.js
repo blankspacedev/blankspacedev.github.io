@@ -11,7 +11,7 @@ gulp.task('css', () => {
   gulp.src(paths.appSassFilesGlob)
     .pipe(sass())
     .pipe(concat('main.css'))
-    .pipe(cleancss())
+    .pipe(cleancss({advanced:false}))
     .pipe(gulp.dest(paths.jekyllStyleFiles))
 });
 
