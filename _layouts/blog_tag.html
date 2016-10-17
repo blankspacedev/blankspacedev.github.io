@@ -6,15 +6,15 @@ parent_nav_url: /blog/
 {% if site.tags[page.slug] %}
     {% for post in site.tags[page.slug] %}
         <!-- Blog Post -->
-        <h3 class="ctitle"><a href="{{ post.url | prepend: site.github.url }}">{{ post.title }}</a></h3>
+        <h3 class="ctitle"><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a></h3>
 
-        <a href="{{ post.url | prepend: site.github.url }}">
-            <img class="img-responsive" src="{{ post.image  | prepend: site.github.url}}">
+        <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">
+            <img class="img-responsive" src="{{ post.image  | prepend: site.baseurl | prepend: site.url}}">
         </a>
 
         <p class="csmall">{{ post.date | date: "%b %-d, %Y" }}. | By: {{ post.author }}</p>
         {{ post.excerpt }}
-        <p><a href="{{ post.url | prepend: site.github.url }}">[Read More]</a></p>
+        <p><a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">[Read More]</a></p>
         <div class="hline"></div>
 
         <div class="spacing"></div>

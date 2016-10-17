@@ -1,4 +1,3 @@
-github:
-    url: "http://localhost:4000"
+url: "http://localhost:4000"
 
 development: true # optional, you can use in liquid tag conditionals

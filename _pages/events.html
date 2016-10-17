@@ -31,8 +31,8 @@ navigation_weight: 3
                   <div class="text-center">
                     <h4>{{event.event_date | date: "%A %-d" }} - {{event.title}}</h4>
                   </div>
-                  <a class="rig-cell" href="{{ event.url | prepend: site.github.url}}">
-                      <img class="rig-img" src="{{ event.image | prepend: site.github.url }}" alt="">
+                  <a class="rig-cell" href="{{ event.url | prepend: site.baseurl | prepend: site.url}}">
+                      <img class="rig-img" src="{{ event.image | prepend: site.baseurl | prepend: site.url }}" alt="">
                       <span class="rig-overlay"></span>
                       <span class="rig-text">
                         {{event.summary}}
