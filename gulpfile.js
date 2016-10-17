@@ -43,13 +43,13 @@ gulp.task('serve', () => {
 
   // Watch for app style files
   gulp.watch(paths.appSassFilesGlob, ['css']);
-  
+
   // Watch for config files
   gulp.watch(['_config.yml', '_app/localhost_config.yml'], ['jekyll']);
   // Watch for .html files
   gulp.watch(['**/*.html', '!_site/**/*.*'], ['jekyll']);
   // Watch for md files
-  gulp.watch(['**/*.'+paths.markdownPattern, '!_site/**/*.*'], ['jekyll']);
+  gulp.watch(['**/'+paths.markdownPattern, '!_site/**/*.*'], ['jekyll']);
   // Watch for data files
   gulp.watch(['_data/*.yml'], ['jekyll']);
   // Watch for  assets

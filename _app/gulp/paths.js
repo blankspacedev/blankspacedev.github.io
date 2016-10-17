@@ -30,12 +30,12 @@ paths.jekyllStyleFiles = paths.jekyllDir + paths.assetsFolderName;
 
 
 // Glob patterns by file type
-paths.sassPattern        = '/**/*.scss';
-paths.jsPattern          = '/**/*.js';
-paths.imagePattern       = '/**/*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
-paths.markdownPattern    = '/**/*.+(md|MD|markdown|MARKDOWN)';
-paths.htmlPattern        = '/**/*.html';
-paths.xmlPattern         = '/**/*.xml';
+paths.sassPattern        = '*.scss';
+paths.jsPattern          = '*.js';
+paths.imagePattern       = '*.+(jpg|JPG|jpeg|JPEG|png|PNG|svg|SVG|gif|GIF|webp|WEBP|tif|TIF)';
+paths.markdownPattern    = '*.+(md|MD|markdown|MARKDOWN)';
+paths.htmlPattern        = '*.html';
+paths.xmlPattern         = '*.xml';
 
 // App files globs
 paths.appSassFilesGlob     = paths.appSassFiles     + paths.sassPattern;
