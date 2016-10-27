@@ -40,7 +40,7 @@ sass:
 # Project structure config
 permalink: /blog/:year/:title.html
 
-include: ["_pages", "images"]
+include: ["_pages"]
 
 exclude: ["_app",
           "Gemfile",
