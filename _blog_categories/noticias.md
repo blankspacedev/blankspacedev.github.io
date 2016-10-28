@@ -1,5 +1,5 @@
 ---
 slug: noticias
 name: noticias
-title: Blog - Noticias
+title: Blog - Category:Noticias
 ---

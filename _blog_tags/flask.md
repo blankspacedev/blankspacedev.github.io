@@ -1,4 +1,4 @@
 ---
 slug: flask
-title: Blog - Flask
+title: Blog - Tag:Flask
 ---

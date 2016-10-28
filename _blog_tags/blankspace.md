@@ -1,4 +1,4 @@
 ---
 slug: blankspace
-title: Blog - BlankSpace
+title: Blog - Tag:BlankSpace
 ---

@@ -1,4 +1,4 @@
 ---
 slug: python
-title: Blog - Python
+title: Blog - Tag:Python
 ---

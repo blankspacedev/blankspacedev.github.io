@@ -1,4 +1,4 @@
 ---
 slug: codetavern
-title: Blog - Code Tavern
+title: Blog - Tag:Code Tavern
 ---
