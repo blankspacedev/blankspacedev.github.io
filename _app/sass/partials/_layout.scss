@@ -15,7 +15,7 @@ header {
 }
 
 #headerbg {
-	background: url(../assets/img/abbg.png) no-repeat center top;
+	background: url(/assets/img/abbg.png) no-repeat center top;
 	position: relative;
 	background-attachment: relative;
 	background-position: bottom center;
@@ -41,19 +41,19 @@ header {
 
 #headerbg-slim-g {
   @extend %headerbg-slim;
-	background: url(../assets/img/abbg_g.png) no-repeat right top;
+	background: url(/assets/img/abbg_g.png) no-repeat right top;
   @include bgsize(cover);
 }
 
 #headerbg-slim-b {
   @extend %headerbg-slim;
-  background: url(../assets/img/abbg_b.png) no-repeat right top;
+  background: url(/assets/img/abbg_b.png) no-repeat right top;
   @include bgsize(cover);
 }
 
 #headerbg-slim-p {
   @extend %headerbg-slim;
-	background: url(../assets/img/abbg_p.png) no-repeat right top;
+	background: url(/assets/img/abbg_p.png) no-repeat right top;
 	@include bgsize(cover);
 }
 
