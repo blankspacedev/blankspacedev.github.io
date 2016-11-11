@@ -36,7 +36,9 @@ const siteRoot = '_site';
 
 gulp.task('serve', () => {
   browserSync.init({
+    open: false,
     files: [siteRoot + '/**'],
+    host: "0.0.0.0",
     port: 4000,
     server: {
       baseDir: siteRoot
