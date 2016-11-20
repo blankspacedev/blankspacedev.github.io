@@ -1,9 +1,8 @@
 FROM node:6.9.1
 MAINTAINER Jacinto Arias <jarias@elrocin.es>
-ENV REFRESHED_AT 2016-11-11
+ENV REFRESHED_AT 2016-11-20
 
-RUN useradd --user-group --create-home --shell /bin/false app ; \
-    apt-get update ; \
+RUN apt-get update ; \
     apt-get install -y \
       build-essential \
       ruby \
@@ -14,13 +13,10 @@ RUN useradd --user-group --create-home --shell /bin/false app ; \
 ENV HOME=/home/app
 
 COPY package.json Gemfile $HOME/web/
-RUN chown -R app:app $HOME/*
 
-USER app
 WORKDIR $HOME/web/
 
-RUN npm install ; \
-    bundle install --path vender/bundle
+RUN npm install ; bundle install
 
 EXPOSE 4000
 
