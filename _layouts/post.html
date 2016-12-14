@@ -18,7 +18,7 @@ parent_nav_url: /blog/
             <h4>Publicado en <a href="{{ '/blog/category/' | prepend: site.baseurl | prepend: site.url }}{{ page.categories | first }}">{{page.categories}}</a></h4>
             {% for tag in page.tags %}
             <a class="btn btn-theme btn-xs" href="{{ '/blog/tag/' | prepend: site.baseurl | prepend: site.url }}{{ tag }}">
-              #{{tag | capitalize}}
+              #{{tag}}
             </a>
             {%endfor%}
             <hr>

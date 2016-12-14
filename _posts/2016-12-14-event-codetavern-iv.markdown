@@ -8,7 +8,7 @@ event_location: Pub Who's Tommy
 author: blankspacedev
 categories:
 - eventos
-tags: [codetavern, machinelearning, webdev, flask, python, apis]
+tags: [codetavern, machinelearning, webdev, flask, python, APIs]
 summary: "Code Tavern Machine Learning APIs"
 image: /images/blog/2016-11-24-codetaverniv.jpg
 thumb: /images/blog/2016-11-24-codetavernivthumb.jpg

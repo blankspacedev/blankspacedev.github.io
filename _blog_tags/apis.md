@@ -1,4 +1,4 @@
 ---
-slug: apis
-title: Blog - Tag:API's
+slug: APIs
+title: Blog - Tag:APIs
 ---

@@ -37,8 +37,21 @@
     <h4>Etiquetas Populares</h4>
     <div class="hline"></div>
     <p>
+      {% capture tags %}
+        {% for tag in site.tags %}
+          {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+        {% endfor %}
+      {% endcapture %}
+      {% assign sortedtags = tags | split:' ' | sort %}
+      {% for tag in sortedtags reversed %}
+          {% assign tagitems = tag | split: '#' %}
+          <a class="btn btn-theme" href="{{ '/blog/tag/' | prepend: site.baseurl | prepend: site.url }}{{ tagitems[1] }} " role="button">#{{ tagitems[1] }} ({{ tagitems[2] }})</a>
+      {% endfor %}
+
+
+
     {% for tag in site.tags %}
-      <a class="btn btn-theme" href="{{ '/blog/tag/' | prepend: site.baseurl | prepend: site.url }}{{ tag | first }} " role="button">#{{ tag | first | capitalize }} ({{ tag | last | size }})</a>
+
     {% endfor %}
     </p>
     <div class="spacing"></div>
