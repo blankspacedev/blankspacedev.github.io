@@ -11,12 +11,18 @@ navigation_weight: 3
     <div class="row">
 
         <div class="col-lg-12">
+          {% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+
+          <h2>Próximos eventos</h2>
 
            {% assign sorted = (site.posts | sort: 'event_date') %}
            {% assign current_month = "" %}
            <ul>
             {% for event in sorted %}
               {% if event.event_date %}
+              {% capture posttime %}{{event.event_date | date: '%s'}}{% endcapture %}
+              {% if posttime >= nowunix %}
+
                 {% assign event_month = (event.event_date | date: "%B")%}
                 {% if current_month != event_month %}
                   {% assign current_month = event_month %}
@@ -45,7 +51,52 @@ navigation_weight: 3
                 </li>
 
               {%endif%}
+              {% endif %}
             {% endfor %}
+
+            </div><!--/col-lg-12 -->
+
+            <div class="col-lg-12">
+
+            <h2>Eventos pasados</h2>
+            {% assign sorted = (site.posts | sort: 'event_date') %}
+            {% assign current_month = "" %}
+            <ul>
+             {% for event in sorted reversed %}
+               {% if event.event_date %}
+               {% capture posttime %}{{event.event_date | date: '%s'}}{% endcapture %}
+               {% if posttime < nowunix %}
+
+                 {% assign event_month = (event.event_date | date: "%B")%}
+                 {% if current_month != event_month %}
+                   {% assign current_month = event_month %}
+                   </ul>
+                   <h2>{{current_month}}</h2>
+                   <hr class="hline">
+                   <ul id="rig">
+                 {% endif %}
+
+                 <li>
+
+                   <div class="text-center">
+                     <h4>{{event.event_date | date: "%A %-d" }} - {{event.title}}</h4>
+                   </div>
+                   <a class="rig-cell" href="{{ event.url | prepend: site.baseurl | prepend: site.url}}">
+                       <img class="rig-img" src="{{ event.image | prepend: site.baseurl | prepend: site.url }}" alt="">
+                       <span class="rig-overlay"></span>
+                       <span class="rig-text">
+                         {{event.summary}}
+                         <br>
+                         {% for tag in event.tags %}
+                           #{{tag}}&nbsp;
+                         {% endfor %}
+                       </span>
+                   </a>
+                 </li>
+
+               {%endif%}
+               {% endif %}
+             {% endfor %}
 
         </div><!--/col-lg-12 -->
 
