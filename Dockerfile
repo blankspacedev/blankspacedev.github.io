@@ -16,7 +16,8 @@ COPY package.json Gemfile $HOME/web/
 
 WORKDIR $HOME/web/
 
-RUN npm install ; bundle install
+RUN npm install ;
+RUN bundle install
 
 EXPOSE 4000
 
