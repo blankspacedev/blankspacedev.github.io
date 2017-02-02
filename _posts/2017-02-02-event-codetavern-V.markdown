@@ -16,7 +16,7 @@ thumb: /images/blog/2017-02-02-codetavernvthumb.jpg
 
 Retomamos los Code Tavern después de un largo parón para respetar el periodo de exámenes (y la resaca navideña). Esta vez le toca el turno a una de las tecnologías más populares de estos últimos años: Docker. Uno de los pilares de las nuevas estrategias en desarrollo de software, tanto si eres seguidor de la cultura *devops*, utilizas computación en la nube o estás inmerso en un proyecto de software libre es muy probable que Docker haya hecho tu vida más facil.
 
-Docker es una tecnología de contenedores que nos permite mantener nuestros entorno de desarollo y desplegar nuestras aplicaciones en entornos aislados muy fáciles de actualizar y portar. Todo un impulso a la mayoría de las tareas más aparatosas de desarrolladores y operadores de sistemas.
+Docker es una tecnología de contenedores que nos permite mantener nuestros entorno de desarrollo y desplegar nuestras aplicaciones en entornos aislados muy fáciles de actualizar y portar. Todo un impulso a la mayoría de las tareas más aparatosas de desarrolladores y operadores de sistemas.
 
 En esta charla contaremos qué es Docker y cuáles son algunos de los casos de uso más usuales. Demostraremos el uso básico del cliente y el uso de imágenes propias y de repositorio. Para terminar expondremos un par de casos de uso basados en Code Tavern anteriores.
 
